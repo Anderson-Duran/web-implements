@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>advinha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Jogo Advinhe um número</h1>
-        <p>Selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.</p>
+        <h1 class="titulo espacamento">Jogo Advinhe um número</h1>
+        <p class="paragrafo">Selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.</p>
     </div>
-    <div class="container flex">
-        <label for="campoPalpite">Digite seu palpite: </label>    
+    <div class="container flex fonteEspecial text-center espacamento">
+        <label class="fonteEspecial" for="campoPalpite">Digite seu palpite: </label>    
         <input type="text" id="campoPalpite">
-        <input type="submit" value="Enviar palpite" id="envioPalpite">
+        <input type="submit" class="btn btn-primary btn-lg" value="Enviar palpite" id="envioPalpite">
     </div>
     <div class="container paragrafos">
         <p class="palpites"></p>
